@@ -1,0 +1,32 @@
+{
+ "_note": "Irish employee income tax, USC and Class A PRSI parameters. 2026 is the tax year in force; 2027 is Budget 2027 (announced 6 October 2026). Checked 15 October 2026 against Revenue, gov.ie and Citizens Information. Source: irishtakehome.com",
+ "2026": {
+  "income_tax": {
+   "rates": {"standard": 0.20, "higher": 0.40},
+   "standard_rate_band": {"single": 44000, "married_one_income": 53000, "married_two_incomes": {"base": 53000, "increase_from_lower_income_max": 35000}},
+   "credits": {"personal_single": 2000, "personal_married": 4000, "employee": 2000, "employee_rule": "20% of PAYE income if that is under the credit; one per earner", "home_carer": 1950}
+  },
+  "usc": {
+   "exemption_threshold": 13000,
+   "exemption_rule": "income of 13,000 or less pays no USC; above it, USC applies to all income",
+   "bands": [{"up_to": 12012, "rate": 0.005}, {"up_to": 28700, "rate": 0.02}, {"up_to": 70044, "rate": 0.03}, {"up_to": null, "rate": 0.08}]
+  },
+  "prsi_class_a_employee": {
+   "nil_weekly_pay_from": 38, "nil_weekly_pay_to": 352,
+   "rate_to_30_september": 0.042, "rate_from_1_october": 0.0435,
+   "charged_on": "the whole week's pay once weekly pay is over 352",
+   "prsi_credit_band_weekly": [352.01, 424]
+  }
+ },
+ "2027": {
+  "income_tax": {
+   "rates": {"standard": 0.20, "higher": 0.40},
+   "standard_rate_band": {"single": 46500, "married_one_income": 55500, "married_two_incomes": {"base": 55500, "increase_from_lower_income_max": 37500}},
+   "credits": {"personal_single": 2125, "personal_married": 4250, "employee": 2125, "home_carer": 2050}
+  },
+  "usc": {
+   "bands": [{"up_to": 12012, "rate": 0.005}, {"up_to": 30300, "rate": 0.02}, {"up_to": 70044, "rate": 0.03}, {"up_to": null, "rate": 0.08}]
+  },
+  "prsi_class_a_employee": {"rate_to_30_september": 0.0435, "rate_from_1_october": 0.045}
+ }
+}
